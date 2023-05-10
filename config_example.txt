@@ -1,0 +1,15 @@
+# Camera Name
+camera_name="7D"
+# Photo folder on camera (for 7D it's 100EOS7D)
+camera_folder=""
+# Telegram Chat ID
+telegram_chatid="" 
+# Telegtam token
+token=''
+# Where photos will be copying from camera
+working_dir=$HOME/Pictures
+raw_picture=$working_dir/temp/raw.cr2
+preview=$working_dir/temp/preview.jpeg
+log_file=$working_dir/temp/log.txt
+# To get path run 'which gphoto2'
+gphoto2_path="/snap/bin/gphoto2"
