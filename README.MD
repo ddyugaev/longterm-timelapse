@@ -17,16 +17,16 @@ Script which pulls photos from the camera and sends preview and stats to telegra
 **Installation:**
 
 Create directory  
-`mkdir -p /opt/longterm-timelapse`  
-`cd /opt/longterm-timelapse`  
+`sudo mkdir -p /opt/longterm-timelapse`  
+`cd /opt/`  
 Clone git repository  
-`git clone https://github.com/ddyugaev/longterm-timelapse.git`  
+`sudo git clone https://github.com/ddyugaev/longterm-timelapse.git`  
 Make scripts executable  
 `sudo chmod +x /opt/longterm-timelapse/*.sh`  
 Copy config_example.txt to config.txt  
-`cp config_example.txt config.txt`  
+`sudo cp /opt/longterm-timelapse/config_example.txt /opt/longterm-timelapse/config.txt`  
 Edit config  
-`vim /opt/longterm-timelapse/config.txt`  
+`sudo vim /opt/longterm-timelapse/config.txt`  
 Add Crontab  
 `crontab -e`  
 `00 09 * * * /opt/longterm-timelapse/lttl.sh`  
