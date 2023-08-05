@@ -8,8 +8,7 @@ function update {
     if [[ "10#${a:-0}" -lt "10#${b:-0}" ]]; then
         echo "Updating the script"
         cd $script_folder
-        git remote prune origin
-        git fetch origin
+        git checkout -- .
         git pull
     fi
     a=${1:${#a} + 1} b=${2:${#b} + 1}
