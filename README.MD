@@ -12,7 +12,7 @@ Script which pulls photos from the camera and sends preview and stats to telegra
 * Sends preview of last picture taken and status to telegram
 
 **What `lttl-update.sh` script does:**
-* Checks github repo for updates and updates
+* Checks github repo for updates and pull new version
 
 **Installation:**
 
@@ -21,10 +21,10 @@ Create directory
 `cd /opt/`  
 Clone git repository  
 `sudo git clone https://github.com/ddyugaev/longterm-timelapse.git`  
-Make scripts executable  
-`sudo chmod +x /opt/longterm-timelapse/*.sh`  
+Change owner of script folder. Replace pi:pi with your user and group
+`sudo chown -R pi:pi /opt/longterm-timelapse/`
 Copy config_example.txt to config.txt  
-`sudo cp /opt/longterm-timelapse/config_example.txt /opt/longterm-timelapse/config.txt`  
+`cp /opt/longterm-timelapse/config_example.txt /opt/longterm-timelapse/config.txt`  
 Edit config  
 `sudo vim /opt/longterm-timelapse/config.txt`  
 Add Crontab  
