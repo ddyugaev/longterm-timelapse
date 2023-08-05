@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -euox pipefail
+set -eux -o pipefail
 
 #Script Folder
 script_folder=/opt/longterm-timelapse
@@ -15,6 +15,8 @@ if [ ! -d "$working_dir/temp" ]
 then
     /usr/bin/mkdir -p "$working_dir"/temp
 fi
+
+touch "$working_dir/counter.txt"
 
 # Define a timestamp function
 timestamp() {
