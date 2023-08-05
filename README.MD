@@ -21,8 +21,8 @@ Create directory
 `cd /opt/`  
 Clone git repository  
 `sudo git clone https://github.com/ddyugaev/longterm-timelapse.git`  
-Change owner of script folder. Replace pi:pi with your user and group
-`sudo chown -R pi:pi /opt/longterm-timelapse/`
+Change owner of script folder. Replace pi:pi with your user and group  
+`sudo chown -R pi:pi /opt/longterm-timelapse/`  
 Copy config_example.txt to config.txt  
 `cp /opt/longterm-timelapse/config_example.txt /opt/longterm-timelapse/config.txt`  
 Edit config  
